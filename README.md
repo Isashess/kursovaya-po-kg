@@ -1,20 +1,31 @@
-# LAB2 - Computer Graphics
+# Курсовая по компьютерной графике
 
-Coursework/lab project for computer graphics.
+Проект выполнен по дисциплине «Компьютерная графика». В работе реализована визуализация трехмерной призмы средствами OpenGL.
 
-## Contents
+## Что реализовано
 
-- OpenGL scene with a 3D prism.
-- Lighting control.
-- Texture toggling.
-- Alpha blending.
-- Camera and light movement controls.
+- Построение трехмерной призмы.
+- Расчет и задание нормалей для граней.
+- Освещение сцены.
+- Наложение текстуры.
+- Альфа-наложение для прозрачности.
+- Управление камерой и источником света.
 
-## Controls
+## Управление
 
-- `T` - toggle textures.
-- `L` - toggle lighting.
-- `A` - toggle alpha blending.
-- `F` - move light to camera position.
-- `G` - move light horizontally.
-- `G + LMB` - move light vertically.
+- `T` - включить или выключить текстуры.
+- `L` - включить или выключить освещение.
+- `A` - включить или выключить альфа-наложение.
+- `F` - переместить источник света в позицию камеры.
+- `G` - двигать источник света по горизонтали.
+- `G + ЛКМ` - двигать источник света по вертикали.
+
+## Запуск
+
+Проект открывается в Visual Studio через файл `KGlab.sln`.
+
+Основная логика отрисовки находится в файле:
+
+```text
+KGlab/Render.cpp
+```
